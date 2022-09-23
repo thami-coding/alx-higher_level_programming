@@ -17,9 +17,10 @@ if __name__ == "__main__":
         if op == i:
             flag = True
             break
-        if not flag:
-            print("Unknown operator. Available operators: +, -, * and /")
-            sys.exit(1)
+
+    if not flag:
+        print("Unknown operator. Available operators: +, -, * and /")
+        sys.exit(1)
 
     a = int(argv[1])
     b = int(argv[3])
