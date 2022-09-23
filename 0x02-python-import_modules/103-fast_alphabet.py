@@ -1,3 +1,2 @@
 #!/usr/bin/python3
-from print_alphabet import alphabets
-alphabets()
+import print_alphabet
