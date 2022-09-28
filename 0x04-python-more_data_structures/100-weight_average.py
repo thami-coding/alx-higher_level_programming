@@ -10,4 +10,5 @@ def weight_average(my_list=[]):
     for k, v in my_list.items():
         total += k * v
         total2 += v
-        return (total / total2)
+
+    return (total / total2)
