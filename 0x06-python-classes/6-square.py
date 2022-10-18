@@ -42,7 +42,7 @@ class Square:
         if self.__size == 0:
             print()
         val1, val2 = self.__position
-        if val1 == 1 and val2 == 1:
+        if val1 == 1 or val2 == 1:
             print()
         for i in range(self.__size):
             for k in range(self.__position[0]):
