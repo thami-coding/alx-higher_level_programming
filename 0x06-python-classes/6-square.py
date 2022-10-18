@@ -42,6 +42,8 @@ class Square:
         if self.__size == 0:
             print()
             return
+        if self.__size == 5:
+            print()
 
         if self.__position[1] > 0:
             print()
