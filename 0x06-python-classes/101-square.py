@@ -11,7 +11,7 @@ class Square:
     def __str__(self):
         string = ""
         if self.__size == 0:
-            string += "\n"
+            string += ""
             return string
         if self.__position[1] > 0:
             string += "\n"
