@@ -32,9 +32,9 @@ class Rectangle:
             if value < 0:
                 raise ValueError("width must be >= 0")
         except TypeError as e:
-            print("{}".format(e))
+            print("[{}] {}".format(TypeError, e))
             return
         except ValueError as e:
-            print("{}".format(e))
+            print("[{}] {}".format(ValueError, e))
             return
         self.__width = value
