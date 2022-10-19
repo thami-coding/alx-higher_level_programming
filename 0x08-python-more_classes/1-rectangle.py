@@ -14,16 +14,11 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        try:
-            if not isinstance(value, int):
-                raise TypeError("height must be an integer")
-            if value < 0:
-                raise ValueError("height must be >= 0")
-        except TypeError as e:
-            print("[{}] {}".format(TypeError, e))
+        if not isinstance(value, int):
+            raise TypeError("height must be an integer")
             return
-        except ValueError as e:
-            print("[{}] {}".format(ValueError, e))
+        elif value < 0:
+            raise ValueError("height must be >= 0")
             return
         self.__height = value
 
