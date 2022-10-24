@@ -7,14 +7,14 @@ it has one function, matrix(matrix, div)
 def matrix_divided(matrix, div):
     """
     divides all elements of a matrix.
-    matrix must be a list of lists of 
+    matrix must be a list of lists of
     integers or floats
     """
     if not isinstance(matrix, list):
         raise TypeError("matrix must be a matrix\
 (list of lists) of integers/floats")
 
-    if not(isinstance(div, float) or isinstance(div, int)):
+    if not (isinstance(div, float) or isinstance(div, int)):
         raise TypeError("div must be a number")
     if div != div:
         raise TypeError("div must be a number")
@@ -25,9 +25,9 @@ def matrix_divided(matrix, div):
     result = []
     for i in matrix:
         if not isinstance(i, list):
-             raise TypeError("matrix must be a matrix\
+            raise TypeError("matrix must be a matrix\
 (list of lists) of integers/floats")
-        row_len  = len(matrix[0])
+        row_len = len(matrix[0])
         if len(i) != row_len:
             raise TypeError("Each row of the matrix must\
 have the same size")
@@ -44,4 +44,3 @@ have the same size")
         new_matrix.append(result)
         result = []
     return new_matrix
-
