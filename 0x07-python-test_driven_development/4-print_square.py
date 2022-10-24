@@ -5,7 +5,7 @@ This module has on function print_square(size) that prinsts a square
 """
 
 
-def print_square(size):
+def print_square(size=10):
     """
     size must be an integer, otherwise
     raises a TypeError exception
