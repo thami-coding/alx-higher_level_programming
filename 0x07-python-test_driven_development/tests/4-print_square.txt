@@ -33,4 +33,5 @@ Now use it:
 
 
   >>> print_square(0)
-  <BLANKLINE>
+  
+
