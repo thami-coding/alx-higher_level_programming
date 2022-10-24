@@ -28,6 +28,6 @@ Now use it:
   TypeError: first_name must be a string
 
 
-  >>> say_my_name()
+  >>> say_my_name(first_name="", last_name="")
   Traceback (most recent call last):
   TypeError: first_name must be a string
