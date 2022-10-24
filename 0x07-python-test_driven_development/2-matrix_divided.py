@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 This is the divide a matrix module.
 it has one function, matrix(matrix, div)
