@@ -22,4 +22,5 @@ class MyList(list):
         new_list = []
         new_list = list(self)
         new_list.sort()
+        print(new_list)
         return new_list
