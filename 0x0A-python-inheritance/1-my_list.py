@@ -21,3 +21,4 @@ class MyList(list):
         changing the original list
         """
         print(sorted(self))
+        return sorted(self)
