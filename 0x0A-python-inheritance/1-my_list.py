@@ -8,6 +8,12 @@ called print_sorted
 
 class MyList(list):
 
+    """ This is the MYList class
+    which inherits from the list
+    class and has one method
+    print_sorted
+    """
+
     def print_sorted(self):
         """
         print list in ascending order wihtout
