@@ -13,12 +13,13 @@ class MyList(list):
     class and has one method
     print_sorted
     """
-    def __str__(self):
-        return "sorts a list"
+
     def print_sorted(self):
         """
         print list in ascending order wihtout
         changing the original list
         """
-        print(sorted(self))
-        return sorted(self)
+        new_list = []
+        new_list = list(self)
+        new_list.sort()
+        print(new_list)
