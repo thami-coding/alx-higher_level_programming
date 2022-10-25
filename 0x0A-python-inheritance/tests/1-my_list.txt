@@ -68,7 +68,7 @@ TypeError: 'NoneType' object is not iterable
 >>> MyList([])
 []
 
->>> MyList([1, 4, 5, 2])
+>>> my_list = MyList([1, 4, 5, 2])
 [1, 4, 5, 2]
 
 >>> MyList("12345")

@@ -19,7 +19,4 @@ class MyList(list):
         print list in ascending order wihtout
         changing the original list
         """
-        new_list = []
-        new_list = list(self)
-        new_list.sort()
-        print(new_list)
+        print(sorted(self))
