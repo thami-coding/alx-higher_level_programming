@@ -13,7 +13,8 @@ class MyList(list):
     class and has one method
     print_sorted
     """
-
+    def __str__(self):
+        return "sorts a list"
     def print_sorted(self):
         """
         print list in ascending order wihtout
