@@ -3,5 +3,5 @@ BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 bg = BaseGeometry()
 
-bg.area(1)
+bg.integer_validator("width", None)
 
