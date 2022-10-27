@@ -18,7 +18,6 @@ class Student:
 
     def to_json(self):
         obj_dict = self.__dict__
-        print(obj_dict)
         for key, value in list(obj_dict.items()):
             if not (type(value) == int or
                     type(value) == float or
