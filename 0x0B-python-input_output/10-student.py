@@ -20,10 +20,12 @@ class Student:
         obj_dict = self.__dict__
         new_dict = {}
         if isinstance(attrs, list):
-            if len(attrs) > 0:
+            if len(attrs) >= 1:
                 for key in list(obj_dict.keys()):
                     if key in attrs:
                         new_dict[key] = obj_dict[key]
+            else:
+                return {}
         obj_dictionary = new_dict or obj_dict
 
         for key, value in list(obj_dictionary.items()):
