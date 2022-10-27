@@ -1,13 +1,15 @@
 #!/usr/bin/python3
 import json
 """
-This module has one function to_json_string(my_obj)
+This module has one function
+to_json_string(my_obj)
+that serializes an object
 """
 
 
 def to_json_string(my_obj):
     """
-    eturns the JSON representation
+    returns the JSON representation
     of an object (string)
     """
     return json.dumps(my_obj)
