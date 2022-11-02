@@ -43,14 +43,15 @@ class Base:
         """
 
         obj_list = []
-        keys = ['id', 'width', 'height', 'size', 'x', 'y']
-
         if list_objs is not None and len(list_objs) != 0:
             for obj in list_objs:
                 obj_dict = {}
+                keys = ['id', 'width', 'height', 'x', 'y']
+                if hasattr(obj, 'size'):
+                    keys = ['id', 'size', 'x', 'y']
+
                 for key in keys:
-                    if hasattr(obj, key):
-                        obj_dict[key] = getattr(obj, key)
+                    obj_dict[key] = getattr(obj, key)
 
                 obj_list.append(obj_dict)
 
