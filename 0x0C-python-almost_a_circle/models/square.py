@@ -9,6 +9,12 @@ from .rectangle import Rectangle
 
 
 class Square(Rectangle):
+    """
+    Square class creates a square instance
+    with size, x, y dimensions.inherits
+    most of its fields from Rectangle
+    """
+
     def __init__(self, size, x=0, y=0, id=None):
         super().__init__(size, size, x, y, id)
 
@@ -30,10 +36,16 @@ class Square(Rectangle):
             raise TypeError("width must be an integer")
         elif value <= 0:
             raise ValueError("width must be > 0")
-        self.width= value
+        self.width = value
         self.height = value
 
     def update(self, *args, **kwargs):
+        """
+        update a square instance base on the values of
+        args or kwargs. if args exists skip kwargs
+        else use kwargs
+        """
+
         keys = ['id', 'size', 'x', 'y']
         if args is not None and len(args) > 0:
             for i in range(len(args)):
@@ -44,8 +56,13 @@ class Square(Rectangle):
             for key, value in kwargs.items():
                 if key in keys:
                     setattr(self, key, value)
-                    
+
     def to_dictionary(self):
+        """
+        convert a square instance into a dictionary using
+        its fields
+        """
+
         keys = ['id', 'x', 'size', 'y']
         obj_dict = {}
         for key in keys:
