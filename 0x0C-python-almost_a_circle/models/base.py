@@ -43,15 +43,16 @@ class Base:
         """
 
         obj_list = []
-        if cls.__name__ == "Rectangle":
+        if list_obj[0].__class__.__name__ == "Rectangle":
             keys = ['id', 'width', 'height', 'x', 'y']
         else:
             keys = ['id', 'size', 'x', 'y']
 
         for obj in list_objs:
+            new_obj = obj
             obj_dict = {}
             for key in keys:
-                obj_dict[key] = getattr(obj, key)
+                obj_dict[key] = getattr(new_obj, key)
             obj_list.append(obj_dict)
         serialized = cls.to_json_string(obj_list)
         filename = cls.__name__ + ".json"
