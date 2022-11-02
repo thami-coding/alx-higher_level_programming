@@ -25,8 +25,7 @@ class Rectangle(Base):
         values = []
         for key in keys:
             values.append(getattr(self, key))
-        return "[Rectangle] ({}) {}/{} - {}/{}"\
-.format(*values)
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(*values)
 
     @property
     def width(self):
@@ -119,7 +118,7 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """
-        converts a rectangles attributes into 
+        converts a rectangles attributes into
         a dictionary
         """
         keys = ['id', 'width', 'height', 'x', 'y']
