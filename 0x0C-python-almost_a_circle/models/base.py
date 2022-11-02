@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-
-
 """
 base model has one class called
 Base class with a private class attribute __nb_objects = 0
