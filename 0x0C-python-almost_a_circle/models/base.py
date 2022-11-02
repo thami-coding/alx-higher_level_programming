@@ -78,8 +78,10 @@ class Base:
         based on cls and then updates the values
         of this dummy instance
         """
-
-        dummy = cls(10, 10, 10, 10)
+        if cls.__name__ == "Rectangle":
+            dummy = cls(5, 2)
+        else:
+            dummy = cls(4)
         dummy.update(**dictionary)
         return dummy
 
