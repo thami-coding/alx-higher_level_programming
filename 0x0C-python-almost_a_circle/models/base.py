@@ -45,18 +45,18 @@ class Base:
         obj_list = []
         keys = ['id', 'width', 'height', 'size', 'x', 'y']
 
-        for obj in list_objs:
-            new_obj = obj
-            obj_dict = {}
+        if list_objs is not None and len(list_objs) != 0:
+            for obj in list_objs:
+                obj_dict = {}
+                for key in keys:
+                    if hasattr(obj, key):
+                        obj_dict[key] = getattr(obj, key)
 
-            for key in keys:
-                if hasattr(new_obj, key):
-                    obj_dict[key] = getattr(new_obj, key)
-
-            obj_list.append(obj_dict)
+                obj_list.append(obj_dict)
 
         serialized = cls.to_json_string(obj_list)
         filename = cls.__name__ + ".json"
+
         with open(filename, 'w', encoding='utf-8') as f:
             f.write(serialized)
 
