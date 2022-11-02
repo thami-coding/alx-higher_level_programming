@@ -77,9 +77,16 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
+        """calculates the area of the rectangle"""
+
         return self.__width * self.__height
 
     def display(self):
+        """
+        prints the widht and height using #,
+        y determines the amount of newlines to display above #,
+        x determines the amount of space befor #
+        """
         width = self.__width
         height = self.__height
         x = self.__x
@@ -95,6 +102,10 @@ class Rectangle(Base):
             print()
 
     def update(self, *args, **kwargs):
+        """
+        updates a rectangle instance
+        attributes with new values
+        """
         keys = ['id', 'width', 'height', 'x', 'y']
         if args is not None and len(args) > 0:
             for i in range(len(args)):
@@ -107,6 +118,10 @@ class Rectangle(Base):
                     setattr(self, key, value)
 
     def to_dictionary(self):
+        """
+        converts a rectangles attributes into 
+        a dictionary
+        """
         keys = ['id', 'width', 'height', 'x', 'y']
         obj_dict = {}
         for key in keys:
