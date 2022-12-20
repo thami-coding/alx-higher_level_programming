@@ -2,14 +2,9 @@
 
 const Square = require('./5-square.js');
 module.exports = class extends Square {
-  constructor (size) {
-    super(size);
-    this.size = size;
-  }
-
   charPrint (c) {
     let str = '';
-    const size = this.size;
+    const size = this.width;
     if (!c) {
       c = 'X';
     }
