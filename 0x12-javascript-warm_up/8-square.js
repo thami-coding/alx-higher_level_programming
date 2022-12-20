@@ -2,14 +2,14 @@
 const x = process.argv[2];
 let str = '';
 
-if (parseInt(x) || parseInt(x) === 0) {
+if (parseInt(x)) {
   for (let i = 0; i < x; i++) {
     for (let j = 0; j < x; j++) {
-      str += 'X'
+      str += 'X';
     }
-    console.log(str)
-    str = ''
+    console.log(str);
+    str = '';
   }
 } else {
-  console.log('Missing number of occurrences')
+  console.log('Missing number of occurrences');
 }
