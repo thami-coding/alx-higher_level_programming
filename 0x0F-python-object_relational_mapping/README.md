@@ -7,7 +7,7 @@ In the second part, you will use the module SQLAlchemy
 (don’t ask me how to pronounce it…) an Object Relational Mapper (ORM).
 
 
-##Concepts you need to know to complete these tasks
+## Concepts you need to know to complete these tasks
 
 - How to connect to a MySQL database from a Python script
 - How to SELECT rows in a MySQL table from a Python script
