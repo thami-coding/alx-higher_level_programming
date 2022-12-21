@@ -16,8 +16,8 @@ if __name__ == "__main__":
                          host="localhost", port=3306)
     c = db.cursor()
     c.execute("""SELECT * FROM states
-                WHERE name = %s
-                ORDER BY states.id ASC""", (pattern,))
+                WHERE name = '{}'
+                ORDER BY states.id ASC""".format(pattern))
     results = c.fetchall()
     for row in results:
         print(row)
