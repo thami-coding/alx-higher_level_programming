@@ -14,9 +14,10 @@ if __name__ == "__main__":
     db = MySQLdb.connect(user=username, passwd=password, db=database,
                          host="localhost", port=3306)
     c = db.cursor()
+    pattern = 'N%'
     c.execute("""SELECT * FROM states
-                WHERE name LIKE 'N%'
-                ORDER BY states.id ASC""")
+                WHERE name LIKE %s
+                ORDER BY states.id ASC""", (pattern,))
     results = c.fetchall()
     for row in results:
         print(row)
