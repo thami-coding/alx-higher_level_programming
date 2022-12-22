@@ -8,16 +8,17 @@ import sys
 
 
 if __name__ == "__main__":
-    username = sys.argv[1]
-    password = sys.argv[2]
-    database = sys.argv[3]
-    db = MySQLdb.connect(user=username, passwd=password, db=database,
-                         host="localhost", port=3306)
-    c = db.cursor()
-    pattern = 'N%'
-    c.execute("""SELECT * FROM states
-                WHERE name LIKE %s
-                ORDER BY states.id ASC""", (pattern,))
-    results = c.fetchall()
-    for row in results:
-        print(row)
+    if len(sys.argv) == 4:
+        username = sys.argv[1]
+        password = sys.argv[2]
+        database = sys.argv[3]
+        db = MySQLdb.connect(user=username, passwd=password, db=database,
+                             host="localhost", port=3306)
+        c = db.cursor()
+        pattern = 'N%'
+        c.execute("""SELECT * FROM states
+                    WHERE name LIKE %s
+                    ORDER BY states.id ASC""", (pattern,))
+        results = c.fetchall()
+        for row in results:
+            print(row)
