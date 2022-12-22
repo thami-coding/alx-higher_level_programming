@@ -8,14 +8,13 @@ import sys
 
 
 if __name__ == "__main__":
-    if sys.argv.length == 3:
-        username = sys.argv[1]
-        password = sys.argv[2]
-        database = sys.argv[3]
-        db = MySQLdb.connect(user=username, passwd=password, db=database,
+    username = sys.argv[1]
+    password = sys.argv[2]
+    database = sys.argv[3]
+    db = MySQLdb.connect(user=username, passwd=password, db=database,
                          host="localhost", port=3306)
-        c = db.cursor()
-        c.execute("""SELECT * FROM states ORDER BY states.id ASC""")
-        results = c.fetchall()
-        for row in results:
-            print(row)
+    c = db.cursor()
+    c.execute("""SELECT * FROM states ORDER BY states.id ASC""")
+    results = c.fetchall()
+    for row in results:
+        print(row)
