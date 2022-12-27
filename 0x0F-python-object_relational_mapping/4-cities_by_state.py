@@ -16,7 +16,10 @@ if len(sys.argv)-1 == 3:
 
     c.execute(
                 """
-                SELECT id, name FROM cities
+                SELECT cities.id, cities.name, states.name
+                FROM cities
+                JOIN states
+                ON cities.state_id = states.id
                 """
              )
 
