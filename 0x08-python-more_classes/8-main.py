@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-Rectangle = __import__('8-rectangle').Rectangle
+Rectangle = __import__("8-rectangle").Rectangle
 
 # # my_rectangle_1 = Rectangle(8, 4)
 # # my_rectangle_2 = Rectangle(2, 3)
-# my_rectangle_1 = Rectangle(8, 4) 
+# my_rectangle_1 = Rectangle(8, 4)
 # my_rectangle_2 = Rectangle(1, 8)
 
 # if my_rectangle_1 is Rectangle.bigger_or_equal(my_rectangle_1, my_rectangle_2):
@@ -19,11 +19,11 @@ Rectangle = __import__('8-rectangle').Rectangle
 # else:
 #     print("my_rectangle_2 is bigger than my_rectangle_1")
 
-myrectangle1 = Rectangle(8, 4) 
+myrectangle1 = Rectangle(8, 4)
 myrectangle2 = Rectangle(1, 8)
 
-try: 
-    print(myrectangle2 == Rectangle.bigger_or_equal("Rect", myrectangle1)) 
-except Exception as e: 
-   print(e)
+try:
+    print(myrectangle2 == Rectangle.bigger_or_equal("Rect", myrectangle1))
+except Exception as e:
+    print(e)
     # print("[{}] {}".format(e.class.name, e))
