@@ -25,5 +25,5 @@ myrectangle2 = Rectangle(1, 8)
 try: 
     print(myrectangle2 == Rectangle.bigger_or_equal("Rect", myrectangle1)) 
 except Exception as e: 
-   print("Exception")
+   print(e)
     # print("[{}] {}".format(e.class.name, e))
