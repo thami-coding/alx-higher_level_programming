@@ -47,10 +47,15 @@ class Rectangle:
             else self.width * 2 + self.height * 2
         )
 
-    def __repr__(self):
+    def __str__(self):
         string = ""
-        for _ in range(self.height):
+
+        if self.width == 0 or self.height == 0:
+            return string
+
+        for _, index in enumerate(range(self.height)):
             for _ in range(self.width):
                 string += "#"
-            string += "\n"
+            if not (index == self.height - 1):
+                string += "\n"
         return string
