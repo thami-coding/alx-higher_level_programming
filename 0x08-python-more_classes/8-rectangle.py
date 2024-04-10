@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""module contains one Rectangle class based on 0-rectangle.py"""
+"""module contains one Rectangle class only"""
 
 
 class Rectangle:
-    """Rectangel class calculates area and perimeter of rectangle"""
+    """calculates area and perimeter of rectangle"""
 
     number_of_instances = 0
     print_symbol = "#"
