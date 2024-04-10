@@ -6,3 +6,4 @@ def generate_rectangle(width = 10, height = 3):
     return '\n'.join(rows)
 
 print(generate_rectangle())
+
