@@ -50,10 +50,8 @@ class Rectangle:
 
     def __str__(self):
         string = ""
-
         if self.width == 0 or self.height == 0:
             return string
-
         for _, index in enumerate(range(self.height)):
             for _ in range(self.width):
                 string += str(self.print_symbol)
