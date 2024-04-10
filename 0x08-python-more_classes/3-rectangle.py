@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-
-
 """module contains one Rectangle class based on 0-rectangle.py"""
 
 
 class Rectangle:
-    """Rectangel class that contains width and height of rectangle calculates area and perimeter of rectangle"""
+    """Rectangel class calculates area and perimeter of rectangle"""
 
     def __init__(self, width=0, height=0):
         self.height = height
