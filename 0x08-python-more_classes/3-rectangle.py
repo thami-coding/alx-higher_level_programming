@@ -47,7 +47,7 @@ class Rectangle:
             else self.width * 2 + self.height * 2
         )
 
-    def __str__(self):
+    def __repr__(self):
         string = ""
         for _ in range(self.height):
             for _ in range(self.width):
