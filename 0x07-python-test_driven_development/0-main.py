@@ -5,7 +5,7 @@ add_integer = __import__('0-add_integer').add_integer
 # print(add_integer(100, -2))
 # print(add_integer(2))
 
-print(add_integer('1',99))
+print(add_integer(float('nan'), 99))
 
 # try:
 #     print(add_integer(4, "School"))

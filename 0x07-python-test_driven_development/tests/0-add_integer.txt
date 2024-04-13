@@ -31,3 +31,8 @@
     Traceback (most recent call last):
         ...
     TypeError: add_integer() missing 1 required positional argument: 'a'
+
+    >>> add_integer(float('nan'))
+    Traceback (most recent call last):
+        ...
+    ValueError: cannot convert float NaN to integer
