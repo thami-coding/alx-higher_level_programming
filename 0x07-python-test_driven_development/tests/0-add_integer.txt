@@ -1,0 +1,17 @@
+===============================
+ doctest for 0-add_integer.py
+===============================
+
+``0-add_integer()`` returns the addition of its arguments.
+::
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+    >>> add_integer(1, 2)
+    3
+
+    >>> add_integer(1, -2)
+    -1
+
+    >>> add_integer(1.4, 2)
+    3
