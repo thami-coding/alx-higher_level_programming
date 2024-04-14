@@ -2,17 +2,21 @@
 """
 Module: matrix_operations
 
-This module provides a function for dividing all elements of a matrix by a scalar value.
+This module provides a function for dividing all elements
+of a matrix by a scalar value.
 
 Function:
-- matrix_divided(matrix, div): Divides all elements of a matrix by a scalar value.
+- matrix_divided(matrix, div): Divides all elements of
+  a matrix by a scalar value.
   Parameters:
     - matrix (list of lists): The matrix to be divided.
     - div (int or float): The divisor.
   Returns:
-    - list of lists: A new matrix with all elements divided by the divisor, rounded to 2 decimal places.
+    - list of lists: A new matrix with all elements divided
+       by the divisor, rounded to 2 decimal places.
   Raises:
-    - TypeError: If matrix is not a list of lists of integers or floats,
+    - TypeError: If matrix is not a list of lists of
+                integers or floats,
                 or if each row of the matrix does not have the same size,
                 or if div is not a number (integer or float).
     - ZeroDivisionError: If div is equal to 0.
@@ -28,7 +32,8 @@ def matrix_divided(matrix, div):
     - div (int or float): The divisor.
 
     Returns:
-    - list of lists: A new matrix with all elements divided by the divisor, rounded to 2 decimal places.
+    - list of lists: A new matrix with all elements divided
+      by the divisor, rounded to 2 decimal places.
 
     Raises:
     - TypeError: If matrix is not a list of lists of integers or floats,
