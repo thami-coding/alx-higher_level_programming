@@ -22,10 +22,10 @@
     >>> add_integer(1)
     99
 
-    >>> add_integer(float('inf'))
+    >>> add_integer(1,"5")
     Traceback (most recent call last):
         ...
-    OverflowError: cannot convert float infinity to integer
+    TypeError: b must be an integer
 
     >>> add_integer(1,"5")
     Traceback (most recent call last):
