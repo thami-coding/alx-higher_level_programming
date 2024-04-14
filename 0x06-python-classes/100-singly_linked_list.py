@@ -1,3 +1,9 @@
+#!/usr/bin/python3
+"""
+This module defines a Node class.
+"""
+
+
 class Node:
     """
     Represents a node of a singly linked list.
