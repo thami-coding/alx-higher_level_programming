@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""Module has two classes BaseGeometry and Rectangle"""
+"""Module has two class BaseGeometry and Rectangle"""
 
 
 class BaseGeometry:
@@ -102,9 +102,14 @@ class Square(Rectangle):
         __size (int): The size of the square.
 
     Methods:
-        __init__(self, size): Initializes a new Square object with the given size.
-        area(self): Computes and returns the area of the square.
+        __init__(self, size): Initializes a new
+        Square object with the given size.
+        area(self): Computes and returns the
+        area of the square.
+        __str__(self): Returns the string representation
+        of the square.
     """
+
     def __init__(self, size):
         """
         Initializes a new Square object with the given size.
@@ -128,3 +133,12 @@ class Square(Rectangle):
             int: The area of the square.
         """
         return self.__size * self.__size
+
+    def __str__(self):
+        """
+        Returns the string representation of the square.
+
+        Returns:
+            str: The string representation of the square.
+        """
+        return f"[Square] {self.__size}/{self.__size}"
