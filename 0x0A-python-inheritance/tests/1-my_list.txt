@@ -1,0 +1,45 @@
+===============================
+ doctest for 1-my_list.py
+===============================
+
+``1-my_list.py``  Prints the list, but sorted in ascending order.
+::
+
+
+    Example:
+        >>> MyList = __import__('1-my_list').MyList
+        >>> my_list = MyList([3, 1, 2])
+        >>> my_list.print_sorted()
+        [1, 2, 3]
+
+    Edge Cases:
+        Empty List:
+        >>> empty_list = MyList([])
+        >>> empty_list.print_sorted()
+        []
+
+        Single Element List:
+        >>> single_element_list = MyList([5])
+        >>> single_element_list.print_sorted()
+        [5]
+
+        Duplicate Elements:
+        >>> duplicate_elements_list = MyList([3, 1, 2, 1])
+        >>> duplicate_elements_list.print_sorted()
+        [1, 1, 2, 3]
+
+        Negative Numbers:
+        >>> negative_numbers_list = MyList([-3, 1, -2])
+        >>> negative_numbers_list.print_sorted()
+        [-3, -2, 1]
+
+        Mixed Data Types:
+        >>> mixed_data_types_list = MyList(['a', 'c', 'b'])
+        >>> mixed_data_types_list.print_sorted()
+        ['a', 'b', 'c']
+
+        Float Numbers:
+        >>> float_numbers_list = MyList([3.5, 1.2, 2.8])
+        >>> float_numbers_list.print_sorted()
+        [1.2, 2.8, 3.5]
+    
