@@ -43,9 +43,9 @@
         >>> float_numbers_list.print_sorted()
         [1.2, 2.8, 3.5]
 
-        String Argument:
-        >>> argumente_method = MyList("1234")
-        >>> argumente_method.print_sorted()
+        String Numbers:
+        >>> string_number_list = MyList("1234")
+        >>> string_number_list.print_sorted()
         ['1', '2', '3', '4']
 
         With Argument To print_sorted:
