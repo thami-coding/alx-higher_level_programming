@@ -43,3 +43,10 @@
         >>> float_numbers_list.print_sorted()
         [1.2, 2.8, 3.5]
 
+        Non Iterable:
+        >>> my_list = MyList(1234)
+        Traceback (most recent call last):
+            ...
+        TypeError: 'int' object is not iterable
+
+
