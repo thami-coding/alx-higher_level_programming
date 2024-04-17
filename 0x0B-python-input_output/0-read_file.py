@@ -29,6 +29,6 @@ def read_file(filename=""):
             for line in file:
                 print(line, end="")
     except FileNotFoundError:
-        print("File not found.")
+        print("not found.")
     except Exception as e:
         print("An error occurred:", e)
