@@ -1,36 +1,33 @@
-#!/usr/bin/python3
 """
-Module: pascal_triangle_generator
+Module: file_modifier
 
-This module contains a function for generating
-Pascal's triangle up to a specified number of rows.
+This module contains a function for inserting a line of text into a file after each line containing a specific string.
 """
 
-
-def pascal_triangle(n):
+def append_after(filename="", search_string="", new_string=""):
     """
-    Generates Pascal's triangle up to the specified
-    number of rows.
+    Inserts a line of text into a file after each line containing a specific string.
 
     Parameters:
-    - n (int): The number of rows in Pascal's triangle.
-
-    Returns:
-    - List[List[int]]: A list of lists of integers
-    representing Pascal's triangle.
-      Returns an empty list if n <= 0.
+    - filename (str): The name of the file to modify.
+    - search_string (str): The string to search for in each line.
+    - new_string (str): The line of text to insert after each line containing the search string.
     """
-    if n <= 0:
-        return []
-
-    triangle = [[1]]
-    for i in range(1, n):
-        row = [1]
-        for j in range(1, i):
-            row.append(triangle[i-1][j-1] + triangle[i-1][j])
-
-        row.append(1)
-
-        triangle.append(row)
-
-    return triangle
+    # Open the file for reading and writing
+    with open(filename, 'r+') as file:
+        # Read all lines from the file
+        lines = file.readlines()
+        
+        # Rewind the file pointer to the beginning
+        file.seek(0)
+        
+        # Iterate through the lines
+        for line in lines:
+            # Write the current line
+            file.write(line)
+            # If the current line contains the search string, write the new string after it
+            if search_string in line:
+                file.write(new_string + '\n')
+        
+        # Truncate the file to remove any remaining content beyond the current position
+        file.truncate()
