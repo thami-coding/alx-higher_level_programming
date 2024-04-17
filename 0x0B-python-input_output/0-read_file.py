@@ -24,11 +24,6 @@ def read_file(filename=""):
     Returns:
         None
     """
-    try:
-        with open(filename, "r", encoding="utf-8") as file:
-            for line in file:
-                print(line, end="")
-    except FileNotFoundError:
-        print("not found.")
-    except Exception as e:
-        print("An error occurred:", e)
+    with open(filename, "r", encoding="utf-8") as file:
+        for line in file:
+            print(line, end="")
