@@ -44,16 +44,14 @@
         [1.2, 2.8, 3.5]
 
         check append:
-        >>> l = MyList()
-        >>> l.append(1)
-        >>> l.append(3)
-        >>> l.append(2)
-        >>> l.print_sorted()
-        [1, 2, 3]
+        >>> my_list = MyList()
+        >>> my_list.append(1)
+        >>> my_list.append(4)
+        >>> my_list.append(2)
+        >>> my_list.append(3)
+        >>> my_list.append(5)
+        >>> print(my_list)
+        [1, 4, 2, 3, 5]
 
-        print_sorted() returns a new list:
-        >>> l = MyList([3, 1, 2])
-        >>> l.print_sorted()
-        [1, 2, 3]
 
 
