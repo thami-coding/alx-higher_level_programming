@@ -34,7 +34,7 @@ class BaseGeometry:
             ValueError: If value is less than or equal to 0.
         """
 
-        if not type(value) == int:
+        if not type(value) is int:
             raise TypeError(f"{name} must be an integer")
         if value <= 0:
             raise ValueError(f"{name} must be greater than 0")
@@ -49,7 +49,8 @@ class Rectangle(BaseGeometry):
         __height (int): The height of the rectangle.
 
     Methods:
-        __init__(self, width, height): Initializes a new Rectangle object with the given width and height.
+        __init__(self, width, height): Initializes a new Rectangle
+        object with the given width and height.
     """
 
     def __init__(self, width, height):
